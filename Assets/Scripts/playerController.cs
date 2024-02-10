@@ -18,7 +18,6 @@ public class playerController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log($"{_CharacterController.isGrounded} {_fallVelocity}");
         //movement
         _moveVector = Vector3.zero;
             

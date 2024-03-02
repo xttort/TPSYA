@@ -19,7 +19,6 @@ public class EnemyAI : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(_NavMeshAgent.remainingDistance);
         NoticePlayerUpdate();
         ChaseUpdate();
         PatrolUpdate();

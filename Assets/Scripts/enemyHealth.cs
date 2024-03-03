@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemyHealth : MonoBehaviour
 {
     public float value = 100;
-    public float lifetime = 100;
+    //public float lifetime = 100;
     public float damage = 10;
     void Start()
     {

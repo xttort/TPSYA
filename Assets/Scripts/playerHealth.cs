@@ -9,6 +9,7 @@ public class playerHealth : MonoBehaviour
     public RectTransform valueRectTransform;
     public GameObject gamePlayUI;
     public GameObject gameOverScreen;
+    public ParticleSystem HealEff;
 
 
     private float _maxValue;
@@ -21,6 +22,7 @@ public class playerHealth : MonoBehaviour
     void Update()
     {
         isAlive();
+        DrawHealthBar();
     }
     public void giveDmg(float dmg)
     {
@@ -54,5 +56,20 @@ public class playerHealth : MonoBehaviour
         GetComponent<playerController>().enabled = false;
         GetComponent<bulletCaster>().enabled = false;
         GetComponent<CameraRotation>().enabled = false;
+    }
+
+    public void AddHealth(float amount)
+    {
+        //Прибавить к текущему здоровью значение amount
+        if (amount + value > _maxValue)
+        {
+            value = _maxValue;
+        }
+        else
+        {
+            value = value + amount;
+        }
+        HealEff.Play();
+        //Обновить полоску здоровья
     }
 }

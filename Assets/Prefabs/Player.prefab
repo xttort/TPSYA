@@ -419,6 +419,7 @@ GameObject:
   - component: {fileID: 2875862400567165328}
   - component: {fileID: 2875862400567165325}
   - component: {fileID: 3997423288872423153}
+  - component: {fileID: 2140121437857648454}
   - component: {fileID: 2875862400567165326}
   - component: {fileID: 2222688353991959753}
   - component: {fileID: 8269267348273246112}
@@ -496,6 +497,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7431057847087168069, guid: 6aa27f8f18cb4ba45ba30840d8df5e16, type: 3}
   bullet_start_pos: {fileID: 5002283960430140475}
+--- !u!114 &2140121437857648454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2875862400567165329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b305cdd3960a071438aac8399d4137ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  granade: {fileID: 6365616183192419695, guid: 5e287f359423fc5478a3ed90107f5603, type: 3}
+  start_pos_gr: {fileID: 5002283960430140475}
 --- !u!143 &2875862400567165326
 CharacterController:
   m_ObjectHideFlags: 0

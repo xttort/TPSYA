@@ -8,14 +8,13 @@ public class HealthPotion : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<playerHealth>())
-        {
+        {   
             other.GetComponent<playerHealth>().AddHealth(value);
             Destroy(gameObject);
         }

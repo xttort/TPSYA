@@ -21,6 +21,7 @@ public class playerHealth : MonoBehaviour
 
     void Update()
     {
+        //Debug.Log(value);
         isAlive();
         DrawHealthBar();
     }

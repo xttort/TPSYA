@@ -7,6 +7,7 @@ public class bullet : MonoBehaviour
     public float speed;
     public float lifeTime;
     public  Vector3 bulletForward = Vector3.forward;
+    public float dmg = 10;
 
 
     private void Start()
@@ -39,7 +40,7 @@ public class bullet : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<enemyHealth>())
         {
-            collision.gameObject.GetComponent<enemyHealth>().giveDmg(collision.gameObject.GetComponent<enemyHealth>().damage);
+            collision.gameObject.GetComponent<enemyHealth>().giveDmg(dmg);
         }
     }
 }

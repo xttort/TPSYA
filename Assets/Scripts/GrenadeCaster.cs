@@ -8,6 +8,7 @@ public class GrenadeCaster : MonoBehaviour
     public GameObject granade;
     public Transform start_pos_gr;
     public float force = 10;
+    public float dmg = 10;
     void Start()
     {
         
@@ -21,6 +22,7 @@ public class GrenadeCaster : MonoBehaviour
             
             var granadeC = Instantiate(granade);
             granadeC.transform.position = start_pos_gr.position;
+            granadeC.GetComponent<granade>().dmg = dmg;
             granadeC.GetComponent<Rigidbody>().AddForce(start_pos_gr.forward * force);
         }
     }
